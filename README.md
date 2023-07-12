@@ -22,7 +22,8 @@
 - MMCV: 1.3.17
 - MMCV Compiler: GCC 7.5
 - MMCV CUDA Compiler: 10.2
-- MMDetection: 2.27.0+
+- MMDetection: 2.27.0+ (should not over 2.28 https://github.com/open-mmlab/mmdetection/releases)
+- MMDeploy:0.7.0(should not above 0.7.0)
 
 
 <div align="center">
