@@ -32,6 +32,8 @@
   #endif
   <div>&nbsp;</div>
 
+ /data/azuryl/MASK_RCN_tensorrt.png![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/3725efc4-201b-4d21-9113-c8c9a7268cf5)
+
 
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
