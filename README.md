@@ -36,7 +36,8 @@
  nvidia@xavier0:/data/azuryl/mmdeploy_0.7.0$ python ./tools/deploy.py     configs/mmdet/detection/detection_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_2.27.0/configs/retinanet/retinanet_r18_fpn_1x_coco.py     /data/azuryl/retinanet_r18_fpn_1x_coco_20220407_171055-614fd399.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir work_dir     --show     --device cuda:0     --dump-info
 
 
- /data/azuryl/MASK_RCN_tensorrt.png![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/3725efc4-201b-4d21-9113-c8c9a7268cf5)
+ retinanet/retinanet_r18_fpn_1x_coco_tensorrt.png
+ ![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/3725efc4-201b-4d21-9113-c8c9a7268cf5)
 
 
 <div align="center">
