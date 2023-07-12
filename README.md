@@ -23,7 +23,8 @@
 - MMCV Compiler: GCC 7.5
 - MMCV CUDA Compiler: 10.2
 - MMDetection: 2.27.0+ (should not over 2.27+,2.28.0 Deprecate the support of Python 3.6 https://github.com/open-mmlab/mmdetection/releases)
-- MMDeploy:0.7.0(should not above 0.7.0)
+- MMDeploy:0.7.0(should not above 0.7.0) and fix https://github.com/open-mmlab/mmdeploy/issues/114
+  
 
 
 <div align="center">
