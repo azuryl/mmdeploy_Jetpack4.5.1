@@ -4,7 +4,7 @@
 - CUDA_HOME: /usr/local/cuda-10.2
 - NVCC: Cuda compilation tools, release 10.2, V10.2.89
 - GCC: gcc (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04) 7.5.0
-- PyTorch: 1.10.0
+- PyTorch: 1.10.0(use Python 3.6 - torch-1.10.0-cp36-cp36m-linux_aarch64.whl from https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
 - PyTorch compiling details: PyTorch built with:
   - GCC 7.5
   - C++ Version: 201402
@@ -19,10 +19,10 @@
 
 - TorchVision: 0.11.1
 - OpenCV: 4.8.0
-- MMCV: 1.3.17
+- MMCV: 1.3.17 (should <=3.17<=1.8.0)
 - MMCV Compiler: GCC 7.5
 - MMCV CUDA Compiler: 10.2
-- MMDetection: 2.27.0+ (should not over 2.28 https://github.com/open-mmlab/mmdetection/releases)
+- MMDetection: 2.27.0+ (should not over 2.27+,2.28.0 Deprecate the support of Python 3.6 https://github.com/open-mmlab/mmdetection/releases)
 - MMDeploy:0.7.0(should not above 0.7.0)
 
 
