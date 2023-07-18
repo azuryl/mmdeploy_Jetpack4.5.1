@@ -23,7 +23,7 @@
 - MMCV Compiler: GCC 7.5
 - MMCV CUDA Compiler: 10.2
 - MMDetection: 2.27.0+ (should not over 2.27+,2.28.0 Deprecate the support of Python 3.6 https://github.com/open-mmlab/mmdetection/releases)
-- MMDeploy:0.7.0(should not above 0.7.0) and fix https://github.com/open-mmlab/mmdeploy/issues/114
+- MMDeploy:0.7.0(should not above 0.7.0, 0.11 need modify python version to 3.6 immdetection, 0.14 is failed ) and fix https://github.com/open-mmlab/mmdeploy/issues/114
   <div align="center">
   #if NV_TENSORRT_MAJOR > 7
     context_->setOptimizationProfileAsync(0, static_cast<cudaStream_t>(stream_.GetNative()));
