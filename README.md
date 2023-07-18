@@ -36,7 +36,8 @@
  nvidia@xavier0:/data/azuryl/mmdeploy_0.7.0$ python ./tools/deploy.py     configs/mmdet/detection/detection_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_2.27.0/configs/retinanet/retinanet_r18_fpn_1x_coco.py     /data/azuryl/retinanet_r18_fpn_1x_coco_20220407_171055-614fd399.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir work_dir     --show     --device cuda:0     --dump-info
 
 
- retinanet/retinanet_r18_fpn_1x_coco_tensorrt.png
+ retinanet_r18_fpn_1x_coco_tensorrt.png
+ 
  ![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/3725efc4-201b-4d21-9113-c8c9a7268cf5)
 
 
@@ -49,7 +50,8 @@ https://github.com/open-mmlab/mmdeploy/issues/389
 python ./tools/deploy.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_2.27.0/configs/mask_rcnn/mask_rcnn_r50_fpn_2x_coco.py     /data/azuryl/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir work_dir     --show     --device cuda:0     --dump-info
 
 
-MASK_RCN_tensorrt.png
+mask_rcnn/mask_rcnn_r50_fpn_2x_coco_tensorrt.png
+
 ![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/e4f475aa-680b-446e-8aa1-05423f1c97bd)
 
 
