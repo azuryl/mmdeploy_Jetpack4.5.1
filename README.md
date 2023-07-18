@@ -42,7 +42,7 @@
 
 MASK_RCNN:
 
-configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py for Mask-RCNN while configs/mmdet/detection/detection_tensorrt_dynamic-320x320-1344x1344.py is not for instance segmentation task.
+configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py for Mask-RCNN But configs/mmdet/detection/detection_tensorrt_dynamic-320x320-1344x1344.py is NOT for instance segmentation task.
 
 https://github.com/open-mmlab/mmdeploy/issues/389
 
