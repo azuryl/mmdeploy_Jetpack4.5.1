@@ -74,6 +74,13 @@ according to https://github.com/open-mmlab/mmdetection/blob/v2.27.0/configs/_bas
 
 unzip annotations/annotations_trainval2017.zip place in mmdeploy  folder
 
+python ./tools/deploy.py     configs/mmdet/instance-seg/instance-seg_tensorrt-int8_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_2.27.0/configs/mask_rcnn/mask_rcnn_r50_fpn_2x_coco.py     /data/azuryl/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir work_dir     --show     --device cuda:0     --dump-info
+
+MASK_RCNN_INT8_tensorrt.png
+
+![MASK_RCNN_INT8_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/57409e3f-4654-4f5f-a6ab-59ca1a96484a)
+
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
