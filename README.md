@@ -71,6 +71,9 @@ wget -c http://images.cocodataset.org/annotations/annotations_trainval2017.zip
 
 according to https://github.com/open-mmlab/mmdetection/blob/v2.27.0/configs/_base_/datasets/coco_instance.py#L3  data_root = 'data/coco/'
 
+
+unzip annotations/annotations_trainval2017.zip place in mmdeploy  folder
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
