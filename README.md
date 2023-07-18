@@ -64,6 +64,13 @@ MASK_RCN_FP16_tensorrt.png
 
 ![MASK_RCN_FP16_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/352cf591-be0c-4dca-8409-91c0f1c97a87)
 
+
+MASK_RCNN INT8
+
+wget -c http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+according to https://github.com/open-mmlab/mmdetection/blob/v2.27.0/configs/_base_/datasets/coco_instance.py#L3  data_root = 'data/coco/'
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
