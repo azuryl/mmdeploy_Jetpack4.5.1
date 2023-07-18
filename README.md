@@ -54,6 +54,13 @@ mask_rcnn/mask_rcnn_r50_fpn_2x_coco_tensorrt.png
 
 ![MASK_RCN_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/e4f475aa-680b-446e-8aa1-05423f1c97bd)
 
+MASK_RCNN FP16
+
+python ./tools/deploy.py     configs/mmdet/instance-seg/instance-seg_tensorrt-fp16_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_2.27.0/configs/mask_rcnn/mask_rcnn_r50_fpn_2x_coco.py     /data/azuryl/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir work_dir     --show     --device cuda:0     --dump-info
+
+MASK_RCN_FP16_tensorrt.png
+
+![MASK_RCN_FP16_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/352cf591-be0c-4dca-8409-91c0f1c97a87)
 
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
