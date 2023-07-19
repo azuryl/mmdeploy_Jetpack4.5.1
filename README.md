@@ -19,7 +19,7 @@
 
 - TorchVision: 0.11.1
 - OpenCV: 4.8.0
-- MMCV: 1.3.17 (should <=3.17<=1.8.0,1.7.1 is failed)
+- MMCV: 1.3.17 (should <=3.17<=1.8.0,1.7.1 is slow)
 - MMCV Compiler: GCC 7.5
 - MMCV CUDA Compiler: 10.2
 - MMDetection: 2.27.0+ (should not over 2.27+,2.28.0 Deprecate the support of Python 3.6 https://github.com/open-mmlab/mmdetection/releases)
