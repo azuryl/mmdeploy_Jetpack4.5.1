@@ -90,18 +90,18 @@ MASK_RCN_FP16_static-800x1344.tensorrt.png
 ![MASK_RCN_FP16_static-800x1344 tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/e2c3698d-4a10-4bd7-9cb0-94e5585bd54d)
 
 
-mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1 steps
+# mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1  install method:
 mmcv 1.7.1 
 https://github.com/open-mmlab/mmdeploy/issues/2301
-# 1
+1
 git clone https://github.com/open-mmlab/mmcv.git
-# 2 
+2 
 edit setup.py, remove python_requires='>=3.7'
-# 3 
+3 
 build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
 pip install -v -e.
 
-# 4 
+4 
 install nndeploy v1.2.0 
 
 in mmdeploy_1.2.0/mmdeploy/backend/tensorrt/utils.py because of my cuda is 10.2
