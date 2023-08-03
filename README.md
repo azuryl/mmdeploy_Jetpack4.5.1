@@ -91,6 +91,7 @@ MASK_RCN_FP16_static-800x1344.tensorrt.png
 
 
 # mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1  install method:
+
 1 mmcv 1.7.1 install 
 https://github.com/open-mmlab/mmdeploy/issues/2301
 1)
