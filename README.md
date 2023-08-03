@@ -111,17 +111,21 @@ so command these line
 if cuda_version is not None:
 version_major = int(cuda_version.split('.')[0])
 if version_major < 11:# my cuda is 10.2
+
 # cu11 support cublasLt, so cudnn heuristic tactic should disable CUBLAS_LT # noqa E501
+
 tactic_source = config.get_tactic_sources() - (
 1 << int(trt.TacticSource.CUBLAS_LT))
 config.set_tactic_sources(tactic_source)
 '''
 and replace to config.max_workspace_size = max_workspace_size
 
-fix display issue
+fix display issue:
+
 comment these lines in /data/azuryl/mmdeploy_1.2.0/mmdeploy/backend/tensorrt/wrapper.py
 
 https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L85
+
 https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L96-L97
 
 
