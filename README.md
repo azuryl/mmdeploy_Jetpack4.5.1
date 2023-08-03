@@ -91,18 +91,17 @@ MASK_RCN_FP16_static-800x1344.tensorrt.png
 
 
 # mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1  install method:
-mmcv 1.7.1 
+1 mmcv 1.7.1 install 
 https://github.com/open-mmlab/mmdeploy/issues/2301
-1
+1)
 git clone https://github.com/open-mmlab/mmcv.git
-2 
+2) 
 edit setup.py, remove python_requires='>=3.7'
-3 
+3) 
 build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
 pip install -v -e.
 
-4 
-install nndeploy v1.2.0 
+2 mmdeploy v1.2.0 install
 
 in mmdeploy_1.2.0/mmdeploy/backend/tensorrt/utils.py because of my cuda is 10.2
 so command these line
@@ -119,16 +118,17 @@ config.set_tactic_sources(tactic_source)
 '''
 and replace to config.max_workspace_size = max_workspace_size
 
-# 5  mmdetection 3.1.0 ,mmengine 0.8.3
+3 mmdetection 3.1.0 install
 
-# 6 
-fix geos issue
+4 mmengine 0.8.3 install
+
+5 fix geos issue
 conda install -c conda-forge libstdcxx-ng 
 conda install geos
 
 
 
-# 7
+67
 fix display issue:
 
 comment these lines in /data/azuryl/mmdeploy_1.2.0/mmdeploy/backend/tensorrt/wrapper.py
