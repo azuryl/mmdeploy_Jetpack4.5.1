@@ -101,11 +101,8 @@ edit setup.py, remove python_requires='>=3.7'
 build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
 pip install -v -e.
 
-install nndeploy v1.2.0 and mmdetection 3.1.0 ,mmengine 0.8.3
-
-fix geos issue
-conda install -c conda-forge libstdcxx-ng 
-conda install geos
+# 4 
+install nndeploy v1.2.0 
 
 in mmdeploy_1.2.0/mmdeploy/backend/tensorrt/utils.py because of my cuda is 10.2
 so command these line
@@ -122,6 +119,16 @@ config.set_tactic_sources(tactic_source)
 '''
 and replace to config.max_workspace_size = max_workspace_size
 
+# 5  mmdetection 3.1.0 ,mmengine 0.8.3
+
+# 6 
+fix geos issue
+conda install -c conda-forge libstdcxx-ng 
+conda install geos
+
+
+
+# 7
 fix display issue:
 
 comment these lines in /data/azuryl/mmdeploy_1.2.0/mmdeploy/backend/tensorrt/wrapper.py
