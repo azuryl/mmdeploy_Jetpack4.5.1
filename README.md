@@ -138,6 +138,11 @@ https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wra
 https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L96-L97
 
 
+maskrcnn_mmdeploy1.2.0_tensorrt.png![maskrcnn_mmdeploy1 2 0_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/058551ec-b874-4e7a-b01d-9cd9a8ed5d1c)
+
+
+MASKRCNN_fp16_MMdp1201_tensorrt.png![MASKRCNN_fp16_MMdp1201_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/61eb2eee-9187-4766-865a-4d8f30c7a767)
+
 
 
 <div align="center">
