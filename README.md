@@ -117,6 +117,41 @@ MASK_RCN_FP16_static-800x1344.tensorrt.png
 [![issue resolution](https://img.shields.io/github/issues-closed-raw/open-mmlab/mmdeploy)](https://github.com/open-mmlab/mmdeploy/issues)
 [![open issues](https://img.shields.io/github/issues-raw/open-mmlab/mmdeploy)](https://github.com/open-mmlab/mmdeploy/issues)
 
+
+mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1 steps
+mmcv 1.7.1 
+https://github.com/open-mmlab/mmdeploy/issues/2301
+# 1
+git clone https://github.com/open-mmlab/mmcv.git
+# 2 edit setup.py, remove python_requires='>=3.7'
+# 3 build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
+pip install -v -e.
+
+install nndeploy v1.2.0 and mmdetection 3.1.0 ,mmengine 0.8.3
+
+fix geos issue
+conda install -c conda-forge libstdcxx-ng 
+conda install geos
+
+in mmdeploy_1.2.0/mmdeploy/backend/tensorrt/utils.py because of my cuda is 10.2
+so command these line
+'''
+if cuda_version is not None:
+version_major = int(cuda_version.split('.')[0])
+if version_major < 11:# my cuda is 10.2
+# cu11 support cublasLt, so cudnn heuristic tactic should disable CUBLAS_LT # noqa E501
+tactic_source = config.get_tactic_sources() - (
+1 << int(trt.TacticSource.CUBLAS_LT))
+config.set_tactic_sources(tactic_source)
+'''
+and replace to config.max_workspace_size = max_workspace_size
+
+fix display issue
+comment these lines in /data/azuryl/mmdeploy_1.2.0/mmdeploy/backend/tensorrt/wrapper.py
+
+https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L85
+https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L96-L97
+
 English | [简体中文](README_zh-CN.md)
 
 </div>
