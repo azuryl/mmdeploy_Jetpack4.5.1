@@ -95,8 +95,10 @@ mmcv 1.7.1
 https://github.com/open-mmlab/mmdeploy/issues/2301
 # 1
 git clone https://github.com/open-mmlab/mmcv.git
-# 2 edit setup.py, remove python_requires='>=3.7'
-# 3 build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
+# 2 
+edit setup.py, remove python_requires='>=3.7'
+# 3 
+build from source, you may need install build tools with `conda install -c conda-forge gxx_linux-aarch64`
 pip install -v -e.
 
 install nndeploy v1.2.0 and mmdetection 3.1.0 ,mmengine 0.8.3
@@ -112,7 +114,7 @@ if cuda_version is not None:
 version_major = int(cuda_version.split('.')[0])
 if version_major < 11:# my cuda is 10.2
 
-# cu11 support cublasLt, so cudnn heuristic tactic should disable CUBLAS_LT # noqa E501
+//cu11 support cublasLt, so cudnn heuristic tactic should disable CUBLAS_LT # noqa E501
 
 tactic_source = config.get_tactic_sources() - (
 1 << int(trt.TacticSource.CUBLAS_LT))
