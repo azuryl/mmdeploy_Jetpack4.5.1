@@ -138,12 +138,15 @@ https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wra
 https://github.com/open-mmlab/mmdeploy/blob/v1.2.0/mmdeploy/backend/tensorrt/wrapper.py#L96-L97
 
 
+python ./tools/deploy.py     configs/mmdet/instance-seg/instance-seg_tensorrt-fp16_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py     /data/azuryl/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth     /data/azuryl/mmdetection_2.27.0/demo/demo.jpg     --work-dir /data/azuryl/mmdeploy_model/maskrcnn_d320_1344     --show     --device cuda:0     --dump-info
+
 maskrcnn_mmdeploy1.2.0_tensorrt.png![maskrcnn_mmdeploy1 2 0_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/058551ec-b874-4e7a-b01d-9cd9a8ed5d1c)
 
 
 MASKRCNN_fp16_MMdp1201_tensorrt.png![MASKRCNN_fp16_MMdp1201_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/61eb2eee-9187-4766-865a-4d8f30c7a767)
 
-
+eval:
+python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py --model /data/azuryl/mmdeploy_model/maskrcnn_d320_1344/end2end.engine    --device cuda:0 --log2file LOG2FILE --speed-test
 
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
