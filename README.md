@@ -152,6 +152,14 @@ python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dyna
 
 python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py --model /data/azuryl/mmdeploy_model/maskrcnn_f16_d320_1344/end2end.engine   --device cuda:0 --log2file LOG2FILEf16 --speed-test
 
+python -c 'import mmdeploy;print(mmdeploy.__version__)'
+
+python -c 'import onnx;print(onnx.__version__)'
+
+python -c 'import cv2;print(cv2.__version__)'
+
+python -c 'import protobuf;print(protobuf.__version__)'
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
