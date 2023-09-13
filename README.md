@@ -149,6 +149,8 @@ MASKRCNN_fp16_MMdp1201_tensorrt.png![MASKRCNN_fp16_MMdp1201_tensorrt](https://gi
 eval:
 python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py --model /data/azuryl/mmdeploy_model/maskrcnn_d320_1344/end2end.engine    --device cuda:0 --log2file LOG2FILE --speed-test
 
+python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py --model /data/azuryl/mmdeploy_model/maskrcnn_f16_d320_1344/end2end.engine   --device cuda:0 --log2file LOG2FILEf16 --speed-test
+
 <div align="center">
   <img src="resources/mmdeploy-logo.png" width="450"/>
   <div>&nbsp;</div>
