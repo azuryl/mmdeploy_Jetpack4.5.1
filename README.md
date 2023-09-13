@@ -146,7 +146,7 @@ maskrcnn_mmdeploy1.2.0_tensorrt.png![maskrcnn_mmdeploy1 2 0_tensorrt](https://gi
 
 MASKRCNN_fp16_MMdp1201_tensorrt.png![MASKRCNN_fp16_MMdp1201_tensorrt](https://github.com/azuryl/mmdeploy_Jetpack4.5.1/assets/23340671/61eb2eee-9187-4766-865a-4d8f30c7a767)
 
-eval:
+# eval:
 
 python ./tools/test.py     configs/mmdet/instance-seg/instance-seg_tensorrt_dynamic-320x320-1344x1344.py     /data/azuryl/mmdetection_3.1.0/configs/mask_rcnn/mask-rcnn_r50_fpn_2x_coco.py --model /data/azuryl/mmdeploy_model/maskrcnn_d320_1344/end2end.engine    --device cuda:0 --log2file LOG2FILE --speed-test
 
