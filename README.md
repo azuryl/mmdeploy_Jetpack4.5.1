@@ -1,3 +1,4 @@
+https://github.com/open-mmlab/mmdeploy/issues/2260
 - Python: 3.6.9 | packaged by conda-forge | (default, Mar  6 2020, 18:58:41) [GCC 7.3.0]
 - CUDA available: True
 - GPU 0: Xavier
@@ -91,8 +92,6 @@ MASK_RCN_FP16_static-800x1344.tensorrt.png
 
 
 # mmdeploy1.2.0 + mmdetection 3.1.0 + mmcv 2.0.1  install method:
-
-https://github.com/open-mmlab/mmdeploy/issues/2260
 
 1 mmcv 1.7.1 install 
 https://github.com/open-mmlab/mmdeploy/issues/2301
